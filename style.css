@@ -22,6 +22,7 @@
 } 
 .ball {
     position: absolute;
-    
+    width: 20px;
+ 
 }
 
