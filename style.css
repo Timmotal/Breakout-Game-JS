@@ -21,6 +21,7 @@
     background-color: red; 
 } 
 .ball {
+    position: absolute;
     
 }
 
