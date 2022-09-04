@@ -5,5 +5,5 @@ const userStart = [230, 10]
 let currentPosition = userStart
 
 const BoardWidth = 560
-
+const BoardHeight = 300
 
