@@ -4,4 +4,6 @@ const blockHeight = 20
 const userStart = [230, 10]
 let currentPosition = userStart
 
+const BoardWidth = 560
+
 
