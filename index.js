@@ -12,4 +12,5 @@ let ballCurrentPosition = ballStart
 
 let timerId
 const ballDiameter = 20
+let xDirection = 2
  
