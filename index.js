@@ -7,3 +7,5 @@ let currentPosition = userStart
 const BoardWidth = 560
 const BoardHeight = 300
 
+const ballStart = [270, 40]
+ 
