@@ -11,4 +11,5 @@ const ballStart = [270, 40]
 let ballCurrentPosition = ballStart
 
 let timerId
+const ballDiameter = 20
  
