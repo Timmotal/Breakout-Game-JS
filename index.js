@@ -15,3 +15,6 @@ const ballDiameter = 20
 let xDirection = 2
 let yDirection = 2
 let score = 0 
+
+const scoreDisplay = document.querySelector('#score')
+
