@@ -22,6 +22,7 @@ const scoreDisplay = document.querySelector('#score')
 class Block {
     constructor(xAxis, yAxis) {
         this.bottomLeft = [xAxis, yAxis]
+        this.bottomRight = [xAxis + blockWidth, yAxis]
         
     }
 }
