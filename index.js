@@ -18,3 +18,7 @@ let score = 0
 
 const scoreDisplay = document.querySelector('#score')
 
+// create Block
+class Block {
+  
+}
