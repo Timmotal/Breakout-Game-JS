@@ -27,3 +27,5 @@ class Block {
         this.topRight = [xAxis + blockWidth, yAxis + blockHeight]
     }
 }
+
+const blocks = [] 
