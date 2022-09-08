@@ -40,6 +40,11 @@ const blocks = [
     new Block(230, 240),
     new Block(340, 240),
     new Block(450, 240),
-  
+    
+    new Block(10, 210),
+    new Block(120, 210),
+    new Block(230, 210),
+    new Block(340, 210),
+    new Block(450, 210)
     
 ] 
