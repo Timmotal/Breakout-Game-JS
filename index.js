@@ -28,6 +28,7 @@ class Block {
     }
 }
 
+// all my blocks // these are mere spacings
 const blocks = [
     new Block(10, 270),
     new Block(120, 270),
