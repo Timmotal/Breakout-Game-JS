@@ -58,7 +58,8 @@ function addBlocks() {
         // block.style.left = '100px'
         block.style.left = blocks[i].bottomLeft[0] + 'px'
         block.style.bottom = blocks[i].bottomLeft[1] + 'px'
-        
+        //block.style.bottom = '50px'
+        grid.appendChild(block)
     }
 }
 
