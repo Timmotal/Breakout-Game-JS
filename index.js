@@ -52,7 +52,9 @@ const blocks = [
 
 
 function addBlocks() {
-   
+    for (let i = 0; i < blocks.length; i++) {
+        
+    }
 }
 
 
