@@ -50,7 +50,7 @@ const blocks = [
     
 ] 
 
-
+// Draw All My Blocks
 function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
         const block = document.createElement('div')
