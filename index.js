@@ -49,3 +49,10 @@ const blocks = [
     new Block(450, 210)
     
 ] 
+
+
+function addBlocks() {
+   
+}
+
+
