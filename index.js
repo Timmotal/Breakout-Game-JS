@@ -55,6 +55,8 @@ function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
         const block = document.createElement('div')
         block.classList.add('block')
+        // block.style.left = '100px'
+        block.style.left = blocks[i].bottomLeft[0] + 'px'
         
     }
 }
