@@ -54,6 +54,7 @@ const blocks = [
 function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
         const block = document.createElement('div')
+        block.classList.add('block')
         
     }
 }
