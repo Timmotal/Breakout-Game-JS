@@ -74,5 +74,5 @@ grid.appendChild(user)
 
 // draw the user
 function drawUser() {
-    
+    user.style.left = currentPosition[0] + 'px'
 }
