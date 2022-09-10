@@ -64,3 +64,5 @@ function addBlocks() {
 }
 
 addBlocks() 
+
+const user = document.createElement('div')
