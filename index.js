@@ -73,3 +73,6 @@ drawUser()
 grid.appendChild(user)
 
 // draw the user
+function drawUser() {
+    
+}
