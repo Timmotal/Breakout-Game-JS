@@ -77,7 +77,7 @@ function drawUser() {
     user.style.bottom = currentPosition[1] + 'px'
 }
 
-
+// draw the ball -- March 15th, 1307 hours
 function drawBall() {
     
 }
