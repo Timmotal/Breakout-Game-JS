@@ -76,3 +76,8 @@ function drawUser() {
     user.style.left = currentPosition[0] + 'px'
     user.style.bottom = currentPosition[1] + 'px'
 }
+
+
+function drawBall() {
+    
+}
