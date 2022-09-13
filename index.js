@@ -99,6 +99,6 @@ function moveUser(e) {
                 currentPosition[0] += 10
                 drawUser()
             }
-           
+            break;
     }
 }
