@@ -85,5 +85,10 @@ function drawBall() {
 
 // move user 
 function moveUser(e) {
+    switch(e.key) {
+        
+            
+           
+    }
     
 }
