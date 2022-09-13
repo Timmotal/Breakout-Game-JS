@@ -95,7 +95,10 @@ function moveUser(e) {
     }
     switch(e.key) {
         case 'ArrowRight':
-            
+            if (currentPosition[0] < BoardWidth - blockWidth ) {
+                currentPosition[0] += 10
+                drawUser()
+            }
            
     }
 }
