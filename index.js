@@ -94,7 +94,7 @@ function moveUser(e) {
             break;
     }
     switch(e.key) {
-        
+        case 'ArrowRight':
             
            
     }
