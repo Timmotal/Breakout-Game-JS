@@ -108,8 +108,5 @@ document.addEventListener('keydown', moveUser)
 // add the ball
 const ball = document.createElement('div')
 ball.classList.add('ball')
-// ball.style.left = ballCurrentPosition[0] + 'px'
-// ball.style.bottom = ballCurrentPosition[1] + 'px'
 drawBall()
 grid.appendChild(ball)
-
