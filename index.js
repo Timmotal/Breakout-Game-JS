@@ -111,3 +111,5 @@ ball.classList.add('ball')
 // ball.style.left = ballCurrentPosition[0] + 'px'
 // ball.style.bottom = ballCurrentPosition[1] + 'px'
 drawBall()
+grid.appendChild(ball)
+
