@@ -102,3 +102,6 @@ function moveUser(e) {
             break;
     }
 }
+
+document.addEventListener('keydown', moveUser)
+
