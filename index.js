@@ -114,7 +114,7 @@ grid.appendChild(ball)
 // move ball
 function moveBall() {
     
- 
+    ballCurrentPosition[0] += xDirection // adding 2px per set time in "x-axis" left to right, Horizontal
    
     
   
