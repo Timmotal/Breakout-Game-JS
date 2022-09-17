@@ -130,7 +130,9 @@ function changeDirection() {
         xDirection = -2
         return 
     }
-    
+    if (xDirection === -2 && yDirection === -2) {
+        
+    }
     // return takes you out of the function execution
     
 }
