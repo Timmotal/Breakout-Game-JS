@@ -122,7 +122,9 @@ function moveBall() {
 } 
 
 function changeDirection() {
-    
+    if (xDirection === 2 && yDirection === 2) {
+       
+    }
    
     
     // return takes you out of the function execution
