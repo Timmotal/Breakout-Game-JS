@@ -120,3 +120,11 @@ function moveBall() {
     checkForCollisions()
 
 } 
+
+function changeDirection() {
+    
+   
+    
+    // return takes you out of the function execution
+    
+}
