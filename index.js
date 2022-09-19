@@ -124,7 +124,7 @@ function moveBall() {
 function checkForCollisions() {
     // check for block collisions
     for (let i = 0; i < blocks.length; i++) {
-     
+        if ( //                     > 
         
            
         
