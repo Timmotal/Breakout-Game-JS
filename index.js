@@ -126,7 +126,7 @@ function checkForCollisions() {
     for (let i = 0; i < blocks.length; i++) {
         if ( //                     > 
         
-           
+           // if all conditions stipulated above meet, we know the ball is still in the game area
         
 }
 
