@@ -135,7 +135,7 @@ function checkForCollisions() {
             //blocks.splice(i, 1) // splice is giving me headache
             changeDirection()
             score++
-           
+            scoreDisplay.innerHTML = score
 
             
         }
