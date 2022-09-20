@@ -141,7 +141,7 @@ function checkForCollisions() {
             if (blocks.length === 0) {
                 scoreDisplay.innerHTML = score
                 clearInterval(timerId)
-               
+                document.removeEventListener('keydown', moveUser)
             }
         }
 
