@@ -128,7 +128,18 @@ function checkForCollisions() {
             (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0] ) &&
            ((ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
            // if all conditions stipulated above meet, we know the ball is still in the game area
-        
+        ) {
+            const allBlocks = Array.from(document.querySelectorAll('.block'))
+            console.log(allBlocks)
+            
+           
+            
+           
+
+            
+        }
+
+
 }
 
 function changeDirection() {
