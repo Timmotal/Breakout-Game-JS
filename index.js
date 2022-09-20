@@ -137,7 +137,12 @@ function checkForCollisions() {
             score++
             scoreDisplay.innerHTML = score
 
-            
+            // check for win
+            if (blocks.length === 0) {
+               
+               
+               
+            }
         }
 
 
