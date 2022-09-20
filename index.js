@@ -134,7 +134,7 @@ function checkForCollisions() {
             allBlocks[i].classList.remove('block')
             //blocks.splice(i, 1) // splice is giving me headache
             changeDirection()
-            
+            score++
            
 
             
