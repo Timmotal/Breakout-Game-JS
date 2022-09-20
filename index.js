@@ -139,7 +139,7 @@ function checkForCollisions() {
 
             // check for win
             if (blocks.length === 0) {
-               
+                scoreDisplay.innerHTML = score
                
                
             }
