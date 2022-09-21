@@ -157,7 +157,11 @@ function checkForCollisions() {
     }
 
     // check for wall collisions
-     
+    if (                            // 560    -         20  = 540
+        ballCurrentPosition[0] >= (BoardWidth - ballDiameter ) ||  // if total added pixels is more than BoardWidth - ballDiameter in "X-axis"
+        ballCurrentPosition[1] >= (BoardHeight - ballDiameter ) || // if total added pixels is more than BoardHeight - ballDiameter "Y-axis"
+        ballCurrentPosition[0] <= 0 //if total added pixels of ball in "X-Axis" is less than 0
+    ) 
     
 
 function changeDirection() {
