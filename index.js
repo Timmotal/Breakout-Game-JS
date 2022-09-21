@@ -161,7 +161,14 @@ function checkForCollisions() {
         ballCurrentPosition[0] >= (BoardWidth - ballDiameter ) ||  // if total added pixels is more than BoardWidth - ballDiameter in "X-axis"
         ballCurrentPosition[1] >= (BoardHeight - ballDiameter ) || // if total added pixels is more than BoardHeight - ballDiameter "Y-axis"
         ballCurrentPosition[0] <= 0 //if total added pixels of ball in "X-Axis" is less than 0
-    ) 
+    ) { 
+        changeDirection()
+    }
+
+    // ballCurrentPosition[0] is set to 270 defaultn in the x-axis which is Horizontal
+    // ballCurrentPosition[0] is set to 30.5 default in the y-axis which is Vertical 
+
+    // check for game over
     
 
 function changeDirection() {
