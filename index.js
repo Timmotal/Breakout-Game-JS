@@ -145,8 +145,20 @@ function checkForCollisions() {
             }
         }
 
+        // check for user collisions
+        if ( // this is simply the space between the wall and user's space to the left and no more than the block width
+            (ballCurrentPosition[0] > currentPosition[0] && ballCurrentPosition[0] < currentPosition[0] + blockWidth) &&
+            (ballCurrentPosition[1] > currentPosition[1] && ballCurrentPosition[1] < currentPosition[1] + blockHeight)
+        ) { 
+            console.log("one hunnit")
+            changeDirection()
+            console.log("yyyy")
+        }
+    }
 
-}
+    // check for wall collisions
+     
+    
 
 function changeDirection() {
     if (xDirection === 2 && yDirection === 2) {
