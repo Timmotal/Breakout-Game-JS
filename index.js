@@ -169,7 +169,10 @@ function checkForCollisions() {
     // ballCurrentPosition[0] is set to 30.5 default in the y-axis which is Vertical 
 
     // check for game over
-    
+    if (ballCurrentPosition[1] <= 10) {
+        
+    }
+}
 
 function changeDirection() {
     if (xDirection === 2 && yDirection === 2) {
