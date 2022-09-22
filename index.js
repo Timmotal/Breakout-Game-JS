@@ -172,7 +172,7 @@ function checkForCollisions() {
     if (ballCurrentPosition[1] <= 10) {
         clearInterval(timerId)
         scoreDisplay.textContent = 'Sorry Chunchumaru aka Anunya '
-       \
+        document.removeEventListener('keydown', moveUser)
     }
 }
 
