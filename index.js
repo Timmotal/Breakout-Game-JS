@@ -170,7 +170,8 @@ function checkForCollisions() {
 
     // check for game over
     if (ballCurrentPosition[1] <= 10) {
-        
+        clearInterval(timerId)
+       \
     }
 }
 
