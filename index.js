@@ -1,6 +1,10 @@
 const grid = document.querySelector('.grid')
 const blockWidth = 100
 const blockHeight = 20
+
+// grid.fillStyle = "#ffcd05";
+// grid.fill();
+
 const userStart = [230, 10]
 let currentPosition = userStart
 
@@ -14,7 +18,7 @@ let timerId
 const ballDiameter = 20
 let xDirection = 2
 let yDirection = 2
-let score = 0 
+let score = 0
 
 const scoreDisplay = document.querySelector('#score')
 
@@ -48,7 +52,9 @@ const blocks = [
     new Block(340, 210),
     new Block(450, 210)
     
-] 
+]
+
+//console.log(blocks[0])
 
 // Draw All My Blocks
 function addBlocks() {
@@ -63,11 +69,15 @@ function addBlocks() {
     }
 }
 
-addBlocks() 
+addBlocks()
+// 2019 hours, march 14th, 2022
+// can you see why the for loop didnt display your blocks, because you set "i" equals to 10 and the items in the array is just 1 = "0"
 
+// add user, " i would say 'player' imo"
 const user = document.createElement('div')
 user.classList.add('user')
-
+// user.style.left = currentPosition[0] + 'px'
+// user.style.bottom = currentPosition[1] + 'px'   since we will reuse this, we made it into a function
 drawUser()
 grid.appendChild(user)
 
@@ -108,19 +118,23 @@ document.addEventListener('keydown', moveUser)
 // add the ball
 const ball = document.createElement('div')
 ball.classList.add('ball')
+// ball.style.left = ballCurrentPosition[0] + 'px'
+// ball.style.bottom = ballCurrentPosition[1] + 'px'
 drawBall()
 grid.appendChild(ball)
 
 // move ball
 function moveBall() {
-
+    
     ballCurrentPosition[0] += xDirection // adding 2px per set time in "x-axis" left to right, Horizontal
     ballCurrentPosition[1] += yDirection // adding 2px per set time in "y-axis"  bottom to up, Vertical
     drawBall()
     checkForCollisions()
+    // i wonder why it does not matter whether i put the function before modifying or after modifying
+}
+timerId = setInterval(moveBall, 20) // this is where all the magic happens, moving the ball by constant repetition of the function
 
-} 
-
+// check for collisions
 function checkForCollisions() {
     // check for block collisions
     for (let i = 0; i < blocks.length; i++) {
@@ -165,7 +179,7 @@ function checkForCollisions() {
         changeDirection()
     }
 
-    // ballCurrentPosition[0] is set to 270 default in the x-axis which is Horizontal
+    // ballCurrentPosition[0] is set to 270 defaultn in the x-axis which is Horizontal
     // ballCurrentPosition[0] is set to 30.5 default in the y-axis which is Vertical 
 
     // check for game over
@@ -195,3 +209,18 @@ function changeDirection() {
     } // return takes you out of the function execution
     
 }
+
+
+// // check for collisions at gridRightSide
+// function checkForCollisionY() {
+//     // check for wall collisions
+//     if (ballCurrentPosition[1] >= (BoardWidth - ballDiameter - 20)) {
+//         if (xDirection === 2 && yDirection === 2) {
+//             clearInterval(checkForCollisions())
+//             xDirection = -2
+//             console.log(xDirection)
+//             return
+//         }
+//     }
+// }   haha me attepmting to run the function mySelf
+
