@@ -211,16 +211,5 @@ function changeDirection() {
 }
 
 
-// // check for collisions at gridRightSide
-// function checkForCollisionY() {
-//     // check for wall collisions
-//     if (ballCurrentPosition[1] >= (BoardWidth - ballDiameter - 20)) {
-//         if (xDirection === 2 && yDirection === 2) {
-//             clearInterval(checkForCollisions())
-//             xDirection = -2
-//             console.log(xDirection)
-//             return
-//         }
-//     }
-// }   haha me attepmting to run the function mySelf
+
 
