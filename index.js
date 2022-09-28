@@ -76,8 +76,7 @@ addBlocks()
 // add user, " i would say 'player' imo"
 const user = document.createElement('div')
 user.classList.add('user')
-// user.style.left = currentPosition[0] + 'px'
-// user.style.bottom = currentPosition[1] + 'px'   since we will reuse this, we made it into a function
+
 drawUser()
 grid.appendChild(user)
 
