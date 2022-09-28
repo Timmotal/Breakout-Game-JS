@@ -42,13 +42,13 @@ const blocks = [
     new Block(230, 240),
     new Block(340, 240),
     new Block(450, 240),
-    
+
     new Block(10, 210),
     new Block(120, 210),
     new Block(230, 210),
     new Block(340, 210),
     new Block(450, 210)
-    
+
 ]
 
 // Draw All My Blocks
@@ -84,17 +84,17 @@ function drawBall() {
 
 // move user 
 function moveUser(e) {
-    switch(e.key) {
+    switch (e.key) {
         case 'ArrowLeft':
-            if (currentPosition[0] > 0 ) {
+            if (currentPosition[0] > 0) {
                 currentPosition[0] -= 10
                 drawUser()
             }
             break;
     }
-    switch(e.key) {
+    switch (e.key) {
         case 'ArrowRight':
-            if (currentPosition[0] < BoardWidth - blockWidth ) {
+            if (currentPosition[0] < BoardWidth - blockWidth) {
                 currentPosition[0] += 10
                 drawUser()
             }
@@ -107,35 +107,29 @@ document.addEventListener('keydown', moveUser)
 // add the ball
 const ball = document.createElement('div')
 ball.classList.add('ball')
-// ball.style.left = ballCurrentPosition[0] + 'px'
-// ball.style.bottom = ballCurrentPosition[1] + 'px'
 drawBall()
 grid.appendChild(ball)
 
 // move ball
 function moveBall() {
-    
-    ballCurrentPosition[0] += xDirection // adding 2px per set time in "x-axis" left to right, Horizontal
-    ballCurrentPosition[1] += yDirection // adding 2px per set time in "y-axis"  bottom to up, Vertical
+    ballCurrentPosition[0] += xDirection
+    ballCurrentPosition[1] += yDirection
     drawBall()
     checkForCollisions()
-    // i wonder why it does not matter whether i put the function before modifying or after modifying
 }
-timerId = setInterval(moveBall, 20) // this is where all the magic happens, moving the ball by constant repetition of the function
+timerId = setInterval(moveBall, 20)
 
 // check for collisions
 function checkForCollisions() {
     // check for block collisions
     for (let i = 0; i < blocks.length; i++) {
         if ( //                     > 
-            (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0] ) &&
-           ((ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
-           // if all conditions stipulated above meet, we know the ball is still in the game area
+            (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0]) &&
+            ((ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
         ) {
             const allBlocks = Array.from(document.querySelectorAll('.block'))
             console.log(allBlocks)
             allBlocks[i].classList.remove('block')
-            //blocks.splice(i, 1) // splice is giving me headache
             changeDirection()
             score++
             scoreDisplay.innerHTML = score
@@ -149,10 +143,9 @@ function checkForCollisions() {
         }
 
         // check for user collisions
-        if ( // this is simply the space between the wall and user's space to the left and no more than the block width
-            (ballCurrentPosition[0] > currentPosition[0] && ballCurrentPosition[0] < currentPosition[0] + blockWidth) &&
+        if ((ballCurrentPosition[0] > currentPosition[0] && ballCurrentPosition[0] < currentPosition[0] + blockWidth) &&
             (ballCurrentPosition[1] > currentPosition[1] && ballCurrentPosition[1] < currentPosition[1] + blockHeight)
-        ) { 
+        ) {
             console.log("one hunnit")
             changeDirection()
             console.log("yyyy")
@@ -160,16 +153,12 @@ function checkForCollisions() {
     }
 
     // check for wall collisions
-    if (                            // 560    -         20  = 540
-        ballCurrentPosition[0] >= (BoardWidth - ballDiameter ) ||  // if total added pixels is more than BoardWidth - ballDiameter in "X-axis"
-        ballCurrentPosition[1] >= (BoardHeight - ballDiameter ) || // if total added pixels is more than BoardHeight - ballDiameter "Y-axis"
-        ballCurrentPosition[0] <= 0 //if total added pixels of ball in "X-Axis" is less than 0
-    ) { 
+    if (ballCurrentPosition[0] >= (BoardWidth - ballDiameter) ||
+        ballCurrentPosition[1] >= (BoardHeight - ballDiameter) ||
+        ballCurrentPosition[0] <= 0
+    ) {
         changeDirection()
     }
-
-    // ballCurrentPosition[0] is set to 270 default in the x-axis which is Horizontal
-    // ballCurrentPosition[0] is set to 30.5 default in the y-axis which is Vertical 
 
     // check for game over
     if (ballCurrentPosition[1] <= 10) {
@@ -184,9 +173,9 @@ function changeDirection() {
         yDirection = -2
         return
     }
-    if (xDirection === 2 && yDirection === -2) { 
+    if (xDirection === 2 && yDirection === -2) {
         xDirection = -2
-        return 
+        return
     }
     if (xDirection === -2 && yDirection === -2) {
         yDirection = 2
@@ -195,10 +184,11 @@ function changeDirection() {
     if (xDirection === -2 && yDirection === 2) {
         xDirection = 2
         return
-    } // return takes you out of the function execution
-    
+    }
+
 }
 
 
 
 
+git commit -am 'removed all other comments totally'
