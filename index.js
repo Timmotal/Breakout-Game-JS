@@ -179,7 +179,7 @@ function checkForCollisions() {
         changeDirection()
     }
 
-    // ballCurrentPosition[0] is set to 270 defaultn in the x-axis which is Horizontal
+    // ballCurrentPosition[0] is set to 270 default in the x-axis which is Horizontal
     // ballCurrentPosition[0] is set to 30.5 default in the y-axis which is Vertical 
 
     // check for game over
