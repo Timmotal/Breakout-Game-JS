@@ -70,10 +70,7 @@ function addBlocks() {
 }
 
 addBlocks()
-// 2019 hours, march 14th, 2022
-// can you see why the for loop didnt display your blocks, because you set "i" equals to 10 and the items in the array is just 1 = "0"
 
-// add user, " i would say 'player' imo"
 const user = document.createElement('div')
 user.classList.add('user')
 
