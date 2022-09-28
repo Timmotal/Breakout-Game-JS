@@ -187,8 +187,3 @@ function changeDirection() {
     }
 
 }
-
-
-
-
-git commit -am 'removed all other comments totally'
