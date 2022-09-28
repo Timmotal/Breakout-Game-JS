@@ -2,9 +2,6 @@ const grid = document.querySelector('.grid')
 const blockWidth = 100
 const blockHeight = 20
 
-// grid.fillStyle = "#ffcd05";
-// grid.fill();
-
 const userStart = [230, 10]
 let currentPosition = userStart
 
@@ -54,17 +51,13 @@ const blocks = [
     
 ]
 
-//console.log(blocks[0])
-
 // Draw All My Blocks
 function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
         const block = document.createElement('div')
         block.classList.add('block')
-        // block.style.left = '100px'
         block.style.left = blocks[i].bottomLeft[0] + 'px'
         block.style.bottom = blocks[i].bottomLeft[1] + 'px'
-        //block.style.bottom = '50px'
         grid.appendChild(block)
     }
 }
