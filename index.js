@@ -128,7 +128,7 @@ function checkForCollisions() {
             ((ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
         ) {
             const allBlocks = Array.from(document.querySelectorAll('.block'))
-            console.log(allBlocks)
+            // console.log(allBlocks)
             allBlocks[i].classList.remove('block')
             changeDirection()
             score++
@@ -146,9 +146,9 @@ function checkForCollisions() {
         if ((ballCurrentPosition[0] > currentPosition[0] && ballCurrentPosition[0] < currentPosition[0] + blockWidth) &&
             (ballCurrentPosition[1] > currentPosition[1] && ballCurrentPosition[1] < currentPosition[1] + blockHeight)
         ) {
-            console.log("one hunnit")
+            // console.log("one hunnit")
             changeDirection()
-            console.log("yyyy")
+            // console.log("yyyy")
         }
     }
 
